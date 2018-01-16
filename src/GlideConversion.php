@@ -103,9 +103,7 @@ final class GlideConversion
         copy($this->conversionResult, $outputFile);
         unlink($this->conversionResult);
 
-        if ($this->directoryIsEmpty($conversionResultDirectory)) {
-            rmdir($conversionResultDirectory);
-        }
+      
     }
 
     private function prepareManipulations(array $manipulationGroup): array
